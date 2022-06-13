@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+<div class="bg-info text-white p-2">
+    <span class="navbar-brand ml-2">Buôn Bán Ôtô</span>
+</div>
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-3">
+            <NavLink class="btn btn-outline-primary btn-block"
+                     href="/admin/  Lịch Sử Bán Hàng"
+                     ActiveClass="btn-primary text-white"
+                     Match="NavLinkMatch.Prefix">
+                Lịch Sử Bán Hàng
+            </NavLink>
+            <NavLink class="btn btn-outline-primary btn-block"
+                     href="/admin/orders"
+                     ActiveClass="btn-primary text-white"
+                     Match="NavLinkMatch.Prefix">
+                Hàng Đang Giao or Hàng chưa giao
+            </NavLink>
+        </div>
+        <div class="col">
+            @Body
+        </div>
+    </div>
+</div>
